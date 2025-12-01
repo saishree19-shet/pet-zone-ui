@@ -141,7 +141,7 @@ function showAdoptionForm() {
             <button type="submit">Submit Adoption Request</button>
         </form>
         <button onclick="showPetDetails(${selectedPet.id})">Back</button>
-    `;
+   ` ;
 }
 
 function submitForm(event) {
@@ -158,9 +158,7 @@ function submitForm(event) {
         <button onclick="showHomePage()">Back to Home</button>
     `;
 }
-fetch('http://localhost:5000/pets')
-then(response=>response.json())
-then(data=>console.log(data));
+
 showHomePage();
 
 
